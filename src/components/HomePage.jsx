@@ -10,9 +10,12 @@ const HomePage = () => {
     }
 
   return (
-    <div>
-      <input type='text' placeholder='Enter your name' value={name} onChange={(e) => setName(e.target.value)} />
-        <button onClick={handleJoin}>Join</button>
+    <div className='w-screen h-screen flex flex-col justify-center items-center bg-gray-900'>
+    <h1 className='text-white mb-8 text-4xl font-bold'>Video Chat Application</h1>
+      <div>
+      <input type='text' placeholder='Enter your name' value={name} onChange={(e) => setName(e.target.value)} className='border rounded px-2 py-1 shadow-sm shadow-white' />
+      <button onClick={handleJoin} className='mx-2 rounded px-2 py-1 bg-red-50'>Join</button>
+      </div>
     </div>
   )
 }
